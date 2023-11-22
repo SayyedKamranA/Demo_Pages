@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- title -->
+    <title>Dashboard</title>
+    <!--font-icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href=" css/responsive.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    <!--top-header-start-->
+     <header class="header_sec">
+        <div class="container-fluid">
+            <div class="row py-3" style="box-shadow: 0px 0px 4px -1px #000;">
+                <div class="col-lg-3 col-md-3 col-12">
+                    <div class="header-logo  d-flex justify-content-lg-start justify-content-md-start justify-content-center">
+                        <img src="img/logo.png" class="img-fluid d-block" alt="header logo" />
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-12 d-lg-block d-md-block d-none"></div>               
+            </div>
+            <!--navbar-sec-->
+            <div class="row p-0 m-0 pt-4">
+                <nav class="navbar navbar-expand-lg navbar-light p-0 m-0">
+                    <div class="container-fluid p-0 m-0">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse in_mobile_view" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link link-bttm-bdr" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link link-bttm-bdr" href="#">Users</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link link-bttm-bdr" href="#">Phone System</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-linkd dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Meeting
+                              </a>
+                              <ul class="dropdown-menu mobile_tggle" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">one</a></li>
+                                <li><a class="dropdown-item" href="#">Two</a></li>
+                                <li><a class="dropdown-item" href="#">Three</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link link-bttm-bdr" href="#">Billing</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link link-bttm-bdr" href="#">Meeting</a>
+                            </li>
+                          </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+     </header>
+    <!--top-header-end-->
+
+    <!--sidebar-start-->
+    <section class="sidebar-sec">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="d-lg-flex d-md-flex d-block align-items-start">
+                        <div class="nav flex-column d-flex flex-lg-nowrap nav-pills me-3 sdbr-bdr-box" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <button class="nav-link sidebar-btm-bdr" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="fa-solid fa-hat-cowboy"></i>Roles</button>
+                          <button class="nav-link sidebar-btm-bdr" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fa-solid fa-users-line"></i>User Groups
+                          </button>
+                          <button class="nav-link sidebar-btm-bdr dropdown-toggle" id="v-pills-messages-tab" data-bs-toggle="dropdown" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="true"><i class="fa-solid fa-user"></i>User List</button>
+                            <ul class="dropdown-menu siderbar-drpdwn">
+                              <li>
+                                <div class="d-flex align-items-start">
+                                  <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <button class="nav-link sidebar-innr-itm" id="innr-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#innr-pills-profile" type="button" role="tab" aria-controls="innr-pills-profile" aria-selected="false">Add User
+                                    </button>
+                                    <button class="nav-link sidebar-innr-itm" id="innr-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#innr-pills-messages" type="button" role="tab" aria-controls="innr-pills-messages" aria-selected="false">Show List
+                                    </button>
+                                  </div>
+                              </li>
+                            </ul>          
+                          <button class="nav-link sidebar-btm-bdr" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fa-solid fa-book"></i>Templates</button>
+                        </div>
+                        <div class="tab-content cntnt-bdr-box" id="v-pills-tabContent">
+                          <div class="tab-pane fade active show" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <!--role-contet-->
+                              <div class="tab_cntnt_box">
+                                <div class="cntnt_title">
+                                  <h3>role</h3>
+                                </div>
+                                <div class="tab_sub_cntnt">
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur debitis praesentium iusto quasi, temporibus accusamus quis possimus saepe ipsa. Vel magni molestiae quae alias harum id esse doloribus ab commodi.</p>
+                                </div>
+
+                                <!--table--->
+                                  <div class="table_box">
+                                    <table class="table">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">#</th>
+                                          <th scope="col">First</th>
+                                          <th scope="col">Last</th>
+                                          <th scope="col">Handle</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">1</th>
+                                          <td>Mark</td>
+                                          <td>Otto</td>
+                                          <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">2</th>
+                                          <td>Jacob</td>
+                                          <td>Thornton</td>
+                                          <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">3</th>
+                                          <td>Larry the Bird</td>
+                                          <td>@fat</td>
+                                          <td>@twitter</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">4</th>
+                                          <td>Larry the Bird</td>
+                                          <td>@twitter</td>
+                                          <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">5</th>
+                                          <td>Larry the Bird</td>
+                                          <td>@twitter</td>
+                                          <td>@twitter</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">6</th>
+                                          <td>Larry the Bird</td>
+                                          <td>@twitter</td>
+                                          <td>@twitter</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">7</th>
+                                          <td>Larry the Bird</td>
+                                          <td>@twitter</td>
+                                          <td>@twitter</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">8</th>
+                                          <td>Larry the Bird</td>
+                                          <td>@twitter</td>
+                                          <td>@twitter</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">9</th>
+                                          <td>Larry the Bird</td>
+                                          <td>@twitter</td>
+                                          <td>@twitter</td>
+                                        </tr>
+                                       
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                <!--table-end-->
+                              </div>
+                            <!--role-contet-->
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">s</div>
+                          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">f</div>
+                          <div class="tab-pane fade" id="innr-pills-profile" role="tabpanel" aria-labelledby="innr-pills-profile-tab">
+                             <!--role-contet-->
+                             <div class="tab_cntnt_box">
+                              <div class="cntnt_title">
+                                <h3>Add user</h3>
+                              </div>
+                              <div class="tab_sub_cntnt">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur debitis praesentium iusto quasi, temporibus accusamus quis possimus saepe ipsa. Vel magni molestiae quae alias harum id esse doloribus ab commodi.</p>
+                                 <!-- <div class="inpt-lft">
+                                  <input class="form-control me-2 w-25" type="search" placeholder="Search" aria-label="Search">
+                                 </div> -->
+                              </div>
+
+                              <!--table--->
+                           <div class="row">
+                            <div class="col-12">
+                              <div class="add_row">
+                                <form class="add_frm_box">
+                                  <div class="row">
+                                    <div class="col-md-6 col-12 mb-3">
+                                      <input type="name" class="form-control" id="fname" aria-describedby="nameHelp" placeholder="First Name">
+                                    </div>
+                                    <div class="col-md-6 col-12 mb-3">
+                                      <input type="name" class="form-control" id="lname" aria-describedby="lnameHelp" placeholder="Last Name">
+                                    </div>
+                                    
+                                    <div class="col-md-6 col-12 mb-3">
+                                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+                                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                    </div>
+                                    <div class="col-md-6 col-12 mb-3">
+                                      <input type="number" class="form-control" id="number" aria-describedby="emailHelp" placeholder="Phone Number">
+                                    </div>
+
+                                    <div class="col-md-6 col-12 mb-3">
+                                      <input type="password" class="form-control" id="password" aria-describedby="passwordHelp" placeholder="Password">
+                                    </div>
+                                    <div class="col-md-6 col-12 mb-3">
+                                      <input type="password" class="form-control" id="c_password" aria-describedby="passwordHelp" placeholder="Confirm Password">
+                                    </div>
+                                  </div>
+                                  <div class="mb-3">
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                  </div>
+                                  <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                  </div>
+                                  <button type="submit" class="info-btn submit_button">Submit</button>
+                                </form>
+                              </div>
+                            </div>
+                           </div>
+                              <!--table-end-->
+                            </div>
+                          <!--role-contet-->
+                          </div>
+                          <div class="tab-pane fade" id="innr-pills-messages" role="tabpanel" aria-labelledby="innr-pills-messages-tab">
+                             <!--role-contet-->
+                             <div class="tab_cntnt_box">
+                              <div class="cntnt_title">
+                                <h3>User list</h3>
+                              </div>
+                              <div class="tab_sub_cntnt">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur debitis praesentium iusto quasi, temporibus accusamus quis possimus saepe ipsa. Vel magni molestiae quae alias harum id esse doloribus ab commodi.</p>
+                                <form class="d-flex d-none">
+                                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                  <!-- <button class="info-btn" type="submit">Search</button> -->
+                                </form>
+                              </div>
+
+                              <!--table--->
+                                <div class="table_box">
+                                  <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col">Handle</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                      </tr>
+                                     <tr>
+                                        <th scope="row">3</th>
+                                        <td>Larry the Bird</td>
+                                        <td>@fat</td>
+                                        <td>@twitter</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">4</th>
+                                        <td>Larry the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>@fat</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">5</th>
+                                        <td>Larry the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">6</th>
+                                        <td>Larry the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">7</th>
+                                        <td>Larry the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">8</th>
+                                        <td>Larry the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">9</th>
+                                        <td>Larry the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                      </tr>
+                                     
+                                    </tbody>
+                                  </table>
+                                </div>
+                              <!--table-end-->
+                            </div>
+                          <!--role-contet-->
+                          </div>
+                        </div>
+                        
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--sidebar-end-->
+
+    <!--- Main Tabs -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
